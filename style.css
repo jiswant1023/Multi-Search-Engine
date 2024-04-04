@@ -2,8 +2,15 @@ body{
     margin: 0px;
     font-family: sans-serif;
     background: url('https://irp-cdn.multiscreensite.com/1d47583f/search-engine-optimization.jpg');
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: no-repeat;
+    overflow:scroll;
+}
+
+h1{
+    font-size: xx-large;
+    color: white;
+    text-align: center;
 }
 
 main{
@@ -37,6 +44,19 @@ p{
     text-align: center;
     font-size: larger;
     font-weight: 700;
+}
+
+#latest_news{    
+    width: 100%;
+    height: 100% ;
+    box-shadow: none; 
+    margin-left: 0px;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEuAfx-xyjNDUbhwahqeoznsvM0LOojUtZ_A&s');   
+}
+
+#image_cont{
+flex-direction: row;
+background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEuAfx-xyjNDUbhwahqeoznsvM0LOojUtZ_A&s');
 }
 
 

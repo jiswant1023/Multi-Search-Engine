@@ -11,7 +11,7 @@ const API_KEY = "AIzaSyDQ2UMTKHOnrZavd4iDAHMILv0nNeCZkJE";
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 async function run() {
-  if ((userInput.value === "")) {
+  if (userInput.value === "") {
     alert("Please fill the input...");
     return;
   }
