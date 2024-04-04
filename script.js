@@ -31,11 +31,13 @@ async function news() {
     "apiKey=ac0a078a330e4700ac7a5c05093eb137";
 
 
-  let result = await fetch(url);
-  let data = await result.json();
-  //console.log(data);
-  data.articles.forEach((element) => {
-    console.log(element);
+try {
+	const response = await fetch(url);
+	const result = await response.json();
+	console.log(result);
+
+     result.articles.forEach(element => {
+    console.log(element.url);
     let contDiv=document.createElement("div");
     contDiv.style.display="flex";
     contDiv.style.flexDirection="column";
@@ -59,6 +61,9 @@ async function news() {
     contDiv.append(imgField,para);
     latestNews.append(contDiv);
   });
+} catch (error) {
+	console.error(error);
 }
 
+ }
 news();
